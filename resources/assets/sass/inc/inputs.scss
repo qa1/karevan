@@ -1,0 +1,17 @@
+input.clean {
+	box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+	border: 1px solid #c8c8c8;
+	color: #777;
+	padding: 15px 10px 15px 10px;
+	border-radius: 5px;
+	&-large {
+		font-size: 20px;
+		height: 50px;
+	}
+	&-number {
+		&::placeholder {
+			letter-spacing: 0;
+		}
+		letter-spacing: 8px;
+	}
+}

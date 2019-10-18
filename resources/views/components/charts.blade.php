@@ -1,0 +1,1 @@
+<script type='text/javascript' src="/libs/fusioncharts/fusioncharts.js"></script>

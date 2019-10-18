@@ -1,0 +1,20 @@
+@import "inc/body";
+@import "inc/inputs";
+@import "inc/boxs";
+@import "inc/list";
+@import "inc/datatable";
+@import "inc/table";
+@import "inc/dropdown";
+@import "inc/animations";
+
+.english {
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+.english-persian {
+	font-family: 'Source Sans Pro','iransans';
+}
+
+[v-cloak] {
+	display: none;
+}

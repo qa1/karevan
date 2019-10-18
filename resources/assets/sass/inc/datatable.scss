@@ -1,0 +1,37 @@
+.dt-bootstrap {
+	#datatable_length {
+		float: right;
+	}
+
+	#datatable_filter {
+		float: left;
+		input {
+			margin-left: 0;
+			margin-right: 5px;
+		}
+	}
+
+	#datatable_info {
+		float: right;
+	}
+
+	#datatable_paginate {
+		float: left;
+
+		.pagination {
+			margin: 0;
+		}
+
+		.paginate_button {
+			padding: 0;
+			margin-left: -2px;
+			&:hover {
+				border: 1px solid white;
+			}
+		}
+	}
+}
+
+.dataTable.no-footer {
+	border-bottom: 1px solid rgb(244,244,244)!important;
+}
