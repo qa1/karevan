@@ -11,14 +11,14 @@ class Minify extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'minify';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Remove unused files to reduce output size';
 
     /**
      * Create a new command instance.
