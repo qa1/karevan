@@ -40,7 +40,7 @@ class Minify extends Command
         $vendorPath = base_path('/vendor');
 
         // Remove Formats From Vendors
-        foreach (['*.sass', '*.scss', '*.css', '*.js', '*.less', '*.blade.php', '*.ttf', '*.afm', '*.ufm'] as $ext) {
+        foreach (['*.sass', '*.scss', '*.css', '*.js', '*.less', '*.blade.php', '*.ttf', '*.afm', '*.ufm', '*.md', 'LICENSE', '*.markdown', 'phpunit.xml.dist', '.gitignore', '.gitattributes', '.editorconfig', '.travis.yml', 'LICENSE.txt'] as $ext) {
             foreach (rglob($vendorPath . '/' . $ext) as $file) {
                 unlink($file);
             }
@@ -63,6 +63,26 @@ class Minify extends Command
 
         // Some Vendor Folders
         foreach (rglob($vendorPath . '/assets') as $folder) {
+            @rrmdir($folder);
+        }
+
+        foreach (rglob($vendorPath . '/docs') as $folder) {
+            @rrmdir($folder);
+        }
+
+        foreach (rglob($vendorPath . '/samples') as $folder) {
+            @rrmdir($folder);
+        }
+
+        foreach (rglob($vendorPath . '/test') as $folder) {
+            @rrmdir($folder);
+        }
+
+        foreach (rglob($vendorPath . '/bin') as $folder) {
+            @rrmdir($folder);
+        }
+
+        foreach (rglob($vendorPath . '/.github') as $folder) {
             @rrmdir($folder);
         }
 
